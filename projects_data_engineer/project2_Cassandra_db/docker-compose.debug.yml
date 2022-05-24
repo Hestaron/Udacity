@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  12cassandraproject:
+    image: 12cassandraproject
+    build:
+      context: .
+      dockerfile: ./Dockerfile

@@ -1,0 +1,30 @@
+version: '3.4'
+
+networks:
+  cass-cluster-network:
+    external: true
+
+services:
+  db:
+    image: cassandra
+    container_name: nodeA
+    stdin_open: true
+    tty: true
+    networks:
+      - cass-cluster-network
+    environment:
+      - CASSANDRA_USE_ASTRA=false
+      - CASSANDRA_USER=cassandra
+      - CASSANDRA_PASSWORD=cassandra
+      - CASSANDRA_LOCAL_DC=datacenter1
+      - CASSANDRA_CONTACT_POINTS=nodeA:9042
+      - CASSANDRA_KEYSPACE_CQL="CREATE KEYSPACE spring_petclinic WITH REPLICATION = {'class':'SimpleStrategy','replication_factor':1};" \
+    ports:
+      - 9966:9966
+    # privileged: true
+    # environment: # Add environment variables here.
+    #   POSTGRESQL_HOSTNAME: postgres # for example
+    # ports:
+    # -"8080:8080"
+    # restart:
+    # - always
