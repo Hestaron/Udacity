@@ -4,14 +4,15 @@ from sql_queries import copy_table_queries, insert_table_queries
 
 
 def load_staging_tables(cur, conn):
+    """Creates the staging tables for songs and events"""
     for query in copy_table_queries:
-        # print(f"Loading: {query.replace("CREATE TABLE IF NOT EXISTS ","").split(" ")[0]}")
         print(f"Copying: {query.replace('copy ','').strip().split(' ')[0]}")
         cur.execute(query)
         conn.commit()
     print("Finished loading staging tables.")
 
 def insert_tables(cur, conn):
+    """Fills the star schema databases"""
     for query in insert_table_queries:
         print(f"Inserting in: {query.replace('INSERT INTO ','').strip().split(' ')[0]}")
         cur.execute(query)
@@ -19,6 +20,7 @@ def insert_tables(cur, conn):
 
 
 def main():
+    """Creates connection, then fills the staging tables and inserts the data in star schema."""
     config = configparser.ConfigParser()
     config.read('dwh.cfg')
 
