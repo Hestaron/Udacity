@@ -201,5 +201,11 @@ $RECYCLE.BIN/
 *.docx
 *.jpg
 *.jpeg
-/resources
-/udacity-git-course
+*.csv
+*.zip
+*.7zip
+*.docx
+*.7z
+*.p
+*.log
+courses/*
