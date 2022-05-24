@@ -102,7 +102,7 @@ artist_table_create = ("""
 
 time_table_create = ("""
     CREATE TABLE time (
-    "start_time" TIMESTAMP NOT NULL,
+    "start_time" TIMESTAMP PRIMARY KEY NOT NULL,
     "hour" int NOT NULL,
     "day" INT NOT NULL,
     "week" INT NOT NULL,
