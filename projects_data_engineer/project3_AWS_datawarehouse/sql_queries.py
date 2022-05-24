@@ -139,8 +139,7 @@ songplay_table_insert = ("""
         user_agent
     )
                                         
-    SELECT  DISTINCT TIMESTAMP 'epoch' 
-            + se.ts/1000 * INTERVAL '1 second' AS start_time,
+    SELECT  se.ts/1000 * INTERVAL '1 second' AS start_time,
             se.userId                          AS user_id,
             se.level                           AS level,
             ss.song_id                         AS song_id,
@@ -217,8 +216,7 @@ time_table_insert = ("""
         weekday
     )
                                         
-    SELECT  DISTINCT TIMESTAMP 'epoch' 
-            + se.ts/1000 * INTERVAL '1 second' AS start_time,
+    SELECT  se.ts/1000 * INTERVAL '1 second' AS start_time,
             EXTRACT(hour FROM start_time)      AS hour,
             EXTRACT(day FROM start_time)       AS day,
             EXTRACT(week FROM start_time)      AS week,
