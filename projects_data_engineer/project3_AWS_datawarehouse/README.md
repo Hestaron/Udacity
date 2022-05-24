@@ -31,3 +31,54 @@ log_data/2018/11/2018-11-13-events.json
 
 And below is an example of what the data in a log file, 2018-11-12-events.json, looks like.
 <img src="../images/log-data.png"/>
+  
+  ### The Star Schema
+  <ul>
+    <li>songplay: records from the log dataset associated with song plays</li>
+    <ul>
+      <li>song_play_id</li>
+      <li>start_time</li>
+      <li>user_id</li>
+      <li>level</li>
+      <li>song_id</li>
+      <li>artist_id</li>
+      <li>session_id</li>
+      <li>location</li>
+      <li>user_agent</li>
+    </ul>
+    <li>users: all users in the data</li>
+    <ul>
+      <li>user_id</li>
+      <li>first_name</li>
+      <li>last_name</li>
+      <li>gender</li>
+      <li>level</li>
+    </ul>
+    <li>songs: all songs in the dataset</li>
+    <ul>
+      <li>song_id</li>
+      <li>title</li>
+      <li>artist_id</li>
+      <li>year</li>
+      <li>duration</li>
+    </ul>
+    <li>artists: artists performing the songs in the dataset</li>
+    <ul>
+      <li>artist_id</li>
+      <li>name</li>
+      <li>location</li>
+      <li>latitude</li>
+      <li>longitude</li>
+    </ul>
+    <li>time</li>
+    <ul>
+      <li>start_time</li>
+      <li>hour</li>
+      <li>day</li>
+      <li>week</li>
+      <li>month</li>
+      <li>year</li>
+      <li>weekday</li>
+    </ul>
+      
+    
