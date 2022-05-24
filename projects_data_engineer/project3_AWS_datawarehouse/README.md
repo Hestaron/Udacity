@@ -82,3 +82,11 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
     </ul>
       
     
+### How does it work?
+    
+<ol>
+  <li>Install Python 3</li>
+  <li>Create a virtual environment with the necessary packages</li>
+  <li>Fill the dwh.cfg file with the necessary configurations and logins</li>
+  <li>Run the create_tables.py script, then run the etl.py script. This can be done by running the notebook and uncommenting the commands. This can also be done through terminal.</li>
+    </ol>
