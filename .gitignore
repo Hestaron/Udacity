@@ -20,6 +20,7 @@ courses/*
 *.tar
 *.tar.gz
 *.json
+*.cfg
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
