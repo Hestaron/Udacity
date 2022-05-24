@@ -2,6 +2,20 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,vscode,windows,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,vscode,windows,jupyternotebooks
 
+
+*.zip
+*.docx
+*.jpg
+*.jpeg
+*.csv
+*.zip
+*.7zip
+*.docx
+*.7z
+*.p
+*.log
+courses/*
+
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
@@ -196,16 +210,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/python,vscode,windows,jupyternotebooks
-
-*.zip
-*.docx
-*.jpg
-*.jpeg
-*.csv
-*.zip
-*.7zip
-*.docx
-*.7z
-*.p
-*.log
-courses/*
