@@ -52,7 +52,7 @@ def process_song_data(spark, input_data, output_data):
 def process_log_data(spark, input_data, output_data):
     """Read the log data from input_data, process it, and output it to output_data"""
     # get filepath to log data file
-    log_data = f'{input_data}/log_data/*.json'
+    log_data = f'{input_data}/log_data/*/*/*.json'
 
     # read log data file
     df = spark.read.json(log_data)
@@ -112,9 +112,7 @@ def main():
     input_data = "s3a://udacity-dend/"
     output_data = "s3a://sparkify/"
     
-    input_data = "data"
-    output_data = "data"
-    
+  
     process_song_data(spark, input_data, output_data)    
     process_log_data(spark, input_data, output_data)
 
