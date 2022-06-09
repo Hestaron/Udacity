@@ -25,7 +25,7 @@ def read_song_data(spark, input_data):
     """Read in the song data"""
     # get filepath to song data file
     song_data = f'{input_data}/song_data/*/*/*/*.json'
-    song_data = f'{input_data}/song_data/A/A/A/*.json'
+    # song_data = f'{input_data}/song_data/A/A/A/*.json'
 
 
     # read song data file
