@@ -8,7 +8,7 @@ backports.functools-lru-cache @ file:///home/conda/feedstock_root/build_artifact
 black @ file:///home/conda/feedstock_root/build_artifacts/black-recipe_1638105566468/work
 bleach @ file:///home/conda/feedstock_root/build_artifacts/bleach_1629908509068/work
 brotlipy @ file:///D:/bld/brotlipy_1636012457296/work
-certifi==2021.10.8
+certifi==2022.12.7
 cffi @ file:///D:/bld/cffi_1636046270630/work
 charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1637858084653/work
 click @ file:///D:/bld/click_1635822759200/work
